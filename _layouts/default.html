@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }} | {{site.name}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/style.css">
+
+    <!-- Font Awesome (remove and use Gem) -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl}}/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Questrial|Raleway:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <nav>
+          <a href="{{ site.baseurl}}/" class="logo"><img src="{{ site.baseurl}}/img/logo.png" alt="Zirrus Group logo" title="Zirrus Group logo"></a>
+          <button class="mobile-menu"><i class="fa fa-bars"></i>&nbsp; MENU</button>
+          <ul class="link-list">
+            <li {% if page.url == '/d2gwireless/' %}class="active"{% endif %}><a href="{{ site.baseurl}}/d2gwireless/">Data2Go Wireless</a></li>
+            <li {% if page.url == '/d2gmobile/' %}class="active"{% endif %}><a href="{{ site.baseurl}}/d2gmobile/">Data2Go Mobile</a></li>
+            <li {% if page.url == '/consulting/' %}class="active"{% endif %}><a href="{{ site.baseurl}}/consulting/">Consulting</a></li>
+            <li {% if page.url == '/telecom/' %}class="active"{% endif %}><a href="{{ site.baseurl}}/telecom/">Telecom</a></li>
+            <li {% if page.url == '/about/' %}class="active"{% endif %}><a href="{{ site.baseurl}}/about/">About</a></li>
+            <li {% if page.url == '/contact/' %}class="active"{% endif %}><a href="{{ site.baseurl}}/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div><!-- end container -->
+    </header>
+
+    <div class="container">
+      {{ content }}
+    </div><!-- end container -->
+
+    <footer>
+      <div class="container">
+        <nav>
+          <a href="{{ site.baseurl}}/" class="logo"><img src="{{ site.baseurl}}/img/logo.png"></a>
+
+          <aside class="contact-info">
+            <ul>
+              <li><a href="https://www.linkedin.com/company/zirrus-group" class="linkedin" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+              <li><a href="mailto:sales@zirrusgroup.com" target="_blank">sales@zirrusgroup.com</a></li>
+              <li>954-873-6976</li>
+            </ul>
+          </aside><!-- end contact-info -->
+
+          <ul>
+            <li><a href="{{ site.baseurl}}/d2gwireless/">Data2Go Wireless</a></li>
+            <li><a href="{{ site.baseurl}}/d2gmobile/">Data2Go Mobile</a></li>
+            <li><a href="{{ site.baseurl}}/consulting/">Consulting</a></li>
+            <li><a href="{{ site.baseurl}}/telecom/">Telecom</a></li>
+            <li><a href="{{ site.baseurl}}/about/">About</a></li>
+            <li><a href="{{ site.baseurl}}/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div><!-- end container -->
+
+      <aside class="copyright">Copyright &copy; Zirrus Group, LLC {{ site.time | date: "%Y" }} | All Rights Reserved</aside>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="{{ site.baseurl}}/js/plugins.js"></script>
+    <script src="{{ site.baseurl}}/js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+  </body>
+
+</html>
